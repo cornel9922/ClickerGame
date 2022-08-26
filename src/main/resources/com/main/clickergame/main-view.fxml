@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="700.0" prefWidth="700.0" style="-fx-background-color: #9c6a6a;" xmlns="http://javafx.com/javafx/18" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.main.clickergame.MainController">
+   <children>
+      <Text fill="#e7e3e3" layoutX="55.0" layoutY="46.0" strokeType="OUTSIDE" strokeWidth="0.0" text="MyClicker">
+         <font>
+            <Font name="Arial Bold Italic" size="25.0" />
+         </font>
+      </Text>
+      <ImageView fitHeight="71.0" fitWidth="47.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/click.png" />
+         </image>
+      </ImageView>
+      <Text fill="#f4f42b" layoutX="523.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money">
+         <font>
+            <Font name="Arial" size="14.0" />
+         </font>
+      </Text>
+      <Text fx:id="money_count" fill="#fff200" layoutX="538.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0$" />
+      <ImageView fx:id="mob_clicker" fitHeight="98.0" fitWidth="108.0" layoutX="275.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+         <image>
+            <Image url="@../../../images/heart_home.png" />
+         </image>
+      </ImageView>
+      <AnchorPane layoutX="582.0" prefHeight="306.0" prefWidth="118.0" style="-fx-background-color: #d9c241;">
+         <children>
+            <Text layoutX="15.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upgrades" wrappingWidth="88.3997802734375">
+               <font>
+                  <Font name="Arial Bold Italic" size="18.0" />
+               </font>
+            </Text>
+            <Button fx:id="money_upgrade" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Click +1" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="83.0" mnemonicParsing="false" style="-fx-background-color: gray;" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: gray;" textFill="WHITE" />
+            <Button layoutX="14.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: gray;" textFill="WHITE" />
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

@@ -14,39 +14,46 @@
             <Font name="Arial Bold Italic" size="25.0" />
          </font>
       </Text>
+      <AnchorPane layoutX="188.0" layoutY="14.0" prefHeight="40.0" prefWidth="372.0" style="-fx-background-color: gold;">
+         <children>
+            <Text layoutX="14.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money:">
+               <font>
+                  <Font name="Arial" size="28.0" />
+               </font>
+            </Text>
+            <Text fx:id="money_count" layoutX="115.0" layoutY="33.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50¥" wrappingWidth="142.99993896484375">
+               <font>
+                  <Font name="Arial" size="36.0" />
+               </font>
+            </Text>
+         </children>
+      </AnchorPane>
       <ImageView fitHeight="71.0" fitWidth="47.0" layoutY="5.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/click.png" />
          </image>
       </ImageView>
-      <Text fill="#f4f42b" layoutX="264.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money">
-         <font>
-            <Font name="Arial" size="40.0" />
-         </font>
-      </Text>
-      <Text fx:id="money_count" fill="#fff200" layoutX="226.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0$" textAlignment="CENTER" wrappingWidth="196.5999755859375">
-         <font>
-            <Font name="Arial" size="36.0" />
-         </font></Text>
       <ImageView fx:id="mob_clicker" fitHeight="167.0" fitWidth="176.0" layoutX="241.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/heart_home.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="582.0" prefHeight="306.0" prefWidth="118.0" style="-fx-background-color: #d9c241;">
+      <AnchorPane layoutX="564.0" layoutY="148.0" prefHeight="306.0" prefWidth="135.0" style="-fx-background-color: gold;">
          <children>
             <Text layoutX="15.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upgrades" wrappingWidth="88.3997802734375">
                <font>
                   <Font name="Arial Bold Italic" size="18.0" />
                </font>
             </Text>
-            <Button fx:id="upgrade_1_clickPower" layoutX="4.0" layoutY="48.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: gray;" text="Click power = 1" textAlignment="JUSTIFY" textFill="WHITE" />
+            <Button fx:id="upgrade_1_clickPower" layoutX="4.0" layoutY="48.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="103.0" style="-fx-background-color: gray;" text="Click lv1" textAlignment="JUSTIFY" textFill="WHITE" />
             <Button fx:id="upgrade_2_autoClick" layoutX="17.0" layoutY="99.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Reach 100$" textFill="WHITE" />
             <Button fx:id="upgrade_3_image" layoutX="17.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Reach 500$" textFill="WHITE" />
-            <Text fx:id="upgrade_1_cost" layoutX="46.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20$" />
+            <Text fx:id="upgrade_1_cost" layoutX="46.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5¥" />
             <Text fx:id="upgrade_2_cost" layoutX="46.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20$" visible="false" />
             <Text fx:id="upgrade_3_cost" layoutX="46.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20$" visible="false" />
          </children>
       </AnchorPane>
+      <AnchorPane layoutX="531.0" layoutY="-3.0" prefHeight="16.0" prefWidth="10.0" style="-fx-background-color: black;" />
+      <AnchorPane layoutX="205.0" layoutY="-3.0" prefHeight="16.0" prefWidth="10.0" style="-fx-background-color: black;" />
    </children>
 </AnchorPane>

@@ -19,13 +19,16 @@
             <Image url="@../../../images/click.png" />
          </image>
       </ImageView>
-      <Text fill="#f4f42b" layoutX="523.0" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money">
+      <Text fill="#f4f42b" layoutX="264.0" layoutY="156.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Money">
          <font>
-            <Font name="Arial" size="14.0" />
+            <Font name="Arial" size="40.0" />
          </font>
       </Text>
-      <Text fx:id="money_count" fill="#fff200" layoutX="538.0" layoutY="53.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0$" />
-      <ImageView fx:id="mob_clicker" fitHeight="98.0" fitWidth="108.0" layoutX="275.0" layoutY="275.0" pickOnBounds="true" preserveRatio="true">
+      <Text fx:id="money_count" fill="#fff200" layoutX="226.0" layoutY="198.0" strokeType="OUTSIDE" strokeWidth="0.0" text="0$" textAlignment="CENTER" wrappingWidth="196.5999755859375">
+         <font>
+            <Font name="Arial" size="36.0" />
+         </font></Text>
+      <ImageView fx:id="mob_clicker" fitHeight="167.0" fitWidth="176.0" layoutX="241.0" layoutY="267.0" pickOnBounds="true" preserveRatio="true">
          <image>
             <Image url="@../../../images/heart_home.png" />
          </image>
@@ -37,10 +40,12 @@
                   <Font name="Arial Bold Italic" size="18.0" />
                </font>
             </Text>
-            <Button fx:id="money_upgrade" layoutX="14.0" layoutY="48.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Click +1" textFill="WHITE" />
-            <Button layoutX="14.0" layoutY="83.0" mnemonicParsing="false" style="-fx-background-color: gray;" textFill="WHITE" />
-            <Button layoutX="14.0" layoutY="117.0" mnemonicParsing="false" style="-fx-background-color: gray;" textFill="WHITE" />
-            <Button layoutX="14.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: gray;" textFill="WHITE" />
+            <Button fx:id="upgrade_1_clickPower" layoutX="4.0" layoutY="48.0" mnemonicParsing="false" prefHeight="26.0" prefWidth="103.0" style="-fx-background-color: gray;" text="Click power = 1" textAlignment="JUSTIFY" textFill="WHITE" />
+            <Button fx:id="upgrade_2_autoClick" layoutX="17.0" layoutY="99.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Reach 100$" textFill="WHITE" />
+            <Button fx:id="upgrade_3_image" layoutX="17.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Reach 500$" textFill="WHITE" />
+            <Text fx:id="upgrade_1_cost" layoutX="46.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20$" />
+            <Text fx:id="upgrade_2_cost" layoutX="46.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20$" visible="false" />
+            <Text fx:id="upgrade_3_cost" layoutX="46.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20$" visible="false" />
          </children>
       </AnchorPane>
    </children>

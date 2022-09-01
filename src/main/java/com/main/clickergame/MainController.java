@@ -2,6 +2,9 @@ package com.main.clickergame;
 
 import java.net.URL;
 import java.util.ResourceBundle;
+import java.util.Timer;
+import java.util.TimerTask;
+
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
@@ -40,15 +43,26 @@ public class MainController {
     private Text upgrade_3_cost;
 
     @FXML
-    private Button upgrade_3_image;
-    private int money = 50;
+    private Button upgrade_3_increment;
+    private int money = 500;
     private int upgrade_1_clickPower_code = 1;
-    private int upgrade_1_cost_code = 5;
+    private int upgrade_1_cost_code = 20;
 
-    private int upgrade_2_autoClickPower_code = 0;
+    private int upgrade_2_autoClick_code = 0;
     private int upgrade_2_cost_code = 50;
+
+    private int upgrade_3_increment_code = 0;
     @FXML
     void initialize() {
+    // Initial money count
+        money_count.setText(money + "¥");
+
+    // Clicking on image adds money
+        mob_clicker.setOnMouseClicked(event -> {
+            money+= upgrade_1_clickPower_code;
+            money_count.setText(money + "¥");
+        });
+    // Scheme of using upgrade 1 - click power
         upgrade_1_clickPower.setOnAction(event -> {
             if(money >= upgrade_1_cost_code) {
                 money -= upgrade_1_cost_code;
@@ -57,30 +71,31 @@ public class MainController {
                 upgrade_1_clickPower_code++;
                 upgrade_1_clickPower.setText("Click lv" + upgrade_1_clickPower_code);
 
-                upgrade_1_cost_code = (20*upgrade_1_clickPower_code)/3;
+                upgrade_1_cost_code += upgrade_1_clickPower_code * 5;
                 upgrade_1_cost.setText(upgrade_1_cost_code + "¥");
                 }
-//            if(money >= 100) {
-//                upgrade_2_cost.setVisible(true);
-//                upgrade_2_cost.setText(upgrade_2_cost_code + "¥");
-//                upgrade_2_autoClick.setText("Autoclicker lv" + upgrade_2_autoClickPower_code);
-//            }
             });
 
-        mob_clicker.setOnMouseClicked(event -> {
-            money+= upgrade_1_clickPower_code;
-            money_count.setText(money + "¥");
+    // Scheme of using upgrade 2 - autoclick power
+        upgrade_2_autoClick.setOnAction(event -> {
+            if (money >= upgrade_2_cost_code) {
+                money -= upgrade_2_cost_code;
+                money_count.setText(money + "¥");
+
+                upgrade_2_autoClick_code++;
+                upgrade_2_autoClick.setText("AutoClick lv" + upgrade_2_autoClick_code);
+
+                upgrade_2_cost_code += upgrade_2_autoClick_code * 5;
+                upgrade_2_cost.setText(upgrade_2_cost_code + "¥");
+            }
         });
 
-//        upgrade_2_autoClick.setOnAction(event -> {
-//            if (money >= 100) {
-//
-//                money -= upgrade_2_cost_code;
-//
-//                upgrade_2_cost_code += 50;
-//            }
-//        });
+    // Scheme of using upgrade 3 - Increment all power
+
+
+
 
     }
-
 }
+
+

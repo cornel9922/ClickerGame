@@ -46,11 +46,11 @@
                </font>
             </Text>
             <Button fx:id="upgrade_1_clickPower" layoutX="4.0" layoutY="48.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="103.0" style="-fx-background-color: gray;" text="Click lv1" textAlignment="JUSTIFY" textFill="WHITE" />
-            <Button fx:id="upgrade_2_autoClick" layoutX="17.0" layoutY="99.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Reach 100$" textFill="WHITE" />
-            <Button fx:id="upgrade_3_image" layoutX="17.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Reach 500$" textFill="WHITE" />
-            <Text fx:id="upgrade_1_cost" layoutX="46.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="5¥" />
-            <Text fx:id="upgrade_2_cost" layoutX="46.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20$" visible="false" />
-            <Text fx:id="upgrade_3_cost" layoutX="46.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20$" visible="false" />
+            <Button fx:id="upgrade_2_autoClick" layoutX="17.0" layoutY="99.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="AutoClick lv0" textFill="WHITE" />
+            <Button fx:id="upgrade_3_increment" layoutX="17.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Increment x1" textFill="WHITE" />
+            <Text fx:id="upgrade_1_cost" layoutX="46.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20¥" />
+            <Text fx:id="upgrade_2_cost" layoutX="46.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50¥" />
+            <Text fx:id="upgrade_3_cost" layoutX="46.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500¥" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="531.0" layoutY="-3.0" prefHeight="16.0" prefWidth="10.0" style="-fx-background-color: black;" />

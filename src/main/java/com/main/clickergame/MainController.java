@@ -4,10 +4,13 @@ import java.net.URL;
 import java.util.ResourceBundle;
 import java.util.Timer;
 import java.util.TimerTask;
+import java.util.concurrent.TimeUnit;
 
+import Animations.Shake;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.image.ImageView;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.text.Text;
 
 public class MainController {
@@ -52,6 +55,8 @@ public class MainController {
     private int upgrade_2_cost_code = 50;
 
     private int upgrade_3_increment_code = 0;
+
+
     @FXML
     void initialize() {
     // Initial money count
@@ -61,9 +66,13 @@ public class MainController {
         mob_clicker.setOnMouseClicked(event -> {
             money+= upgrade_1_clickPower_code;
             money_count.setText(money + "¥");
+            Shake shake = new Shake(mob_clicker);
+            shake.playAnim();
         });
+
     // Scheme of using upgrade 1 - click power
         upgrade_1_clickPower.setOnAction(event -> {
+
             if(money >= upgrade_1_cost_code) {
                 money -= upgrade_1_cost_code;
                 money_count.setText(money + "¥");
@@ -73,7 +82,11 @@ public class MainController {
 
                 upgrade_1_cost_code += upgrade_1_clickPower_code * 5;
                 upgrade_1_cost.setText(upgrade_1_cost_code + "¥");
+                Shake shake = new Shake(upgrade_1_clickPower);
+                shake.playAnim();
                 }
+
+            else upgrade_1_cost.setText("You need " + upgrade_1_cost_code + "¥");
             });
 
     // Scheme of using upgrade 2 - autoclick power

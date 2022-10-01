@@ -38,19 +38,19 @@
             <Image url="@../../../images/heart_home.png" />
          </image>
       </ImageView>
-      <AnchorPane layoutX="564.0" layoutY="148.0" prefHeight="306.0" prefWidth="135.0" style="-fx-background-color: gold;">
+      <AnchorPane layoutX="556.0" layoutY="148.0" prefHeight="306.0" prefWidth="135.0" style="-fx-background-color: gold;">
          <children>
             <Text layoutX="15.0" layoutY="20.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Upgrades" wrappingWidth="88.3997802734375">
                <font>
                   <Font name="Arial Bold Italic" size="18.0" />
                </font>
             </Text>
-            <Button fx:id="upgrade_1_clickPower" layoutX="4.0" layoutY="48.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="103.0" style="-fx-background-color: gray;" text="Click lv1" textAlignment="JUSTIFY" textFill="WHITE" />
-            <Button fx:id="upgrade_2_autoClick" layoutX="17.0" layoutY="99.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="AutoClick lv0" textFill="WHITE" />
-            <Button fx:id="upgrade_3_increment" layoutX="17.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Increment x1" textFill="WHITE" />
-            <Text fx:id="upgrade_1_cost" layoutX="46.0" layoutY="44.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20¥" />
-            <Text fx:id="upgrade_2_cost" layoutX="46.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50¥" />
-            <Text fx:id="upgrade_3_cost" layoutX="46.0" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500¥" />
+            <Button fx:id="upgrade_1_clickPower" layoutX="18.0" layoutY="47.0" mnemonicParsing="false" prefHeight="20.0" prefWidth="103.0" style="-fx-background-color: gray;" text="Click lv1" textAlignment="JUSTIFY" textFill="WHITE" />
+            <Button fx:id="upgrade_2_autoClick" layoutX="29.0" layoutY="100.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="AutoClick lv0" textFill="WHITE" />
+            <Button fx:id="upgrade_3_increment" layoutX="29.0" layoutY="153.0" mnemonicParsing="false" style="-fx-background-color: gray;" text="Increment x1" textFill="WHITE" />
+            <Text fx:id="upgrade_1_cost" layoutY="43.0" strokeType="OUTSIDE" strokeWidth="0.0" text="20¥" textAlignment="CENTER" wrappingWidth="140.0" />
+            <Text fx:id="upgrade_2_cost" layoutX="-2.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="50¥" textAlignment="CENTER" wrappingWidth="142.99993896484375" />
+            <Text fx:id="upgrade_3_cost" layoutY="149.0" strokeType="OUTSIDE" strokeWidth="0.0" text="500¥" textAlignment="CENTER" wrappingWidth="142.99993896484375" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="531.0" layoutY="-3.0" prefHeight="16.0" prefWidth="10.0" style="-fx-background-color: black;" />
